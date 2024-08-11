@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        nav {
+            background-color: black;
+            padding: 2px 15px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .nav-container select {
+            border: none;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+        }
+
+        .user span {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .user img {
+            width: 50px;
+            height: 40px;
+            margin-left: 15px;
+        }
+
+        .material-symbols-outlined {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .nav-container>.user>hr {
+            height: 25px;
+            width: 1px;
+            background-color: white;
+            border: none;
+            margin: 0 10px;
+        }
+
+        .reebok {
+            display: flex;
+            align-items: center;
+        }
+
+        .reebokimg {
+            display: flex;
+            align-items: center;
+        }
+
+        .oninfo {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .reebok img {
+            width: 80%;
+            height: 40px;
+            padding-left: 80px;
+        }
+
+        .nav2 {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .nav2 .reebok div>span {
+            margin-right: 25px;
+        }
+
+        .search-container {
+            display: flex;
+            margin-right: 30px;
+        }
+
+        .delivery-container {
+            display: flex;
+            background-color: rgb(238, 51, 51);
+            padding: 5px;
+            border-radius: 30px;
+            padding-right: 60px;
+        }
+
+        .delivery-container span {
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-container,
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        .search-container>hr {
+            width: 100%;
+            border: none;
+            border-top: 1px solid black;
+        }
+
+        .nc {
+            color: black;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        article {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            height: 550px;
+            width: 310px;
+            transition: transform 0.3s ease;
+        }
+
+        article img {
+            max-width: 100%;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        article p {
+            padding-left:5px ;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+        .copy-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .copy {
+            font-size: small;
+            margin: 0;
+        }
+
+        .material-symbols-outlined {
+            cursor: pointer;
+            padding-right:3px ;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <select id="pet-select">
+                        <option value="">MORE BRANDS</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                </div>
+                <div class="user">
+                    <span><span class="material-symbols-outlined">location_on</span>STORES</span>
+                    <hr>
+                    <span><span class="material-symbols-outlined">chat_bubble</span>CONTACT US</span>
+                    <hr>
+                    <span><span class="material-symbols-outlined">person</span>LOG IN</span>
+                    <hr>
+                    <span class="material-symbols-outlined">favorite</span>
+                    <hr>
+                    <span class="material-symbols-outlined">work</span>
+                    <hr>
+                    <span><img src="img/download.jpeg" alt="User Icon"></span>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="nav-container">
+                <div class="reebok">
+                    <div class="reebokimg">
+                        <img src="img/reebok-logo-C86DF05005-seeklogo.com.png" alt="Reebok Logo">
+                    </div>
+                    <div class="oninfo">
+                        <span class="nc">NEW</span>
+                        <span class="nc">ICONS</span>
+                        <span class="nc">MEN</span>
+                        <span class="nc">WOMEN</span>
+                        <span class="nc">SPORTS</span>
+                        <span class="nc">CLASSIC</span>
+                        <span class="nc">SALE</span>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="search-container">
+                        <span class="nc" style="margin-right: 50px;"><span class="material-symbols-outlined">search</span>Search Classic</span>
+                        <hr class="nc">
+                    </div>
+
+                    <div class="delivery-container">
+                        <span class="material-symbols-outlined" style="margin: 10px;">local_shipping</span>
+                        <div>
+                            <span>EXPRESS DELIVERY</span>
+                            <span class="bottom">Select your nearest store > </span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div class="image-container">
+                <div class="copy-container" style="padding-top: 15px;">
+                    <span class="top-left" style="color: white; padding: 3px; background-color: rgba(55, 200, 214, 0.7);">I AM THE NEW</span>
+                    <span class="top-right material-symbols-outlined">favorite</span>
+                </div>
+                <img src="img/download (1).jpeg" alt="Image">
+            </div>
+            
+            <div>
+                <div class="copy-container">
+                    <p class="copy">TRAINING SHOES</p>
+                    <span class="material-symbols-outlined">content_copy</span>
+                </div>                
+                <p>Reebok Women NFX Trainer</p>
+                <p style="font-weight: bold;">$7,599</p>
+            </div>
+        </article>
+        <article>
+            <div class="image-container">
+                <div class="copy-container" style="padding-top: 15px;">
+                    <span class="top-left" style="color: white; padding: 3px; background-color: rgba(55, 200, 214, 0.7);">I AM THE NEW</span>
+                    <span class="top-right material-symbols-outlined">favorite</span>
+                </div>
+                <img src="img/download (2).jpeg" alt="Image">
+            </div>
+            
+            <div>
+                <div class="copy-container">
+                    <p class="copy">TRAINING SHOES</p>
+                    <span class="material-symbols-outlined">content_copy</span>
+                </div>                
+                <p>Reebok Women NFX Trainer</p>
+                <p style="font-weight: bold;">$7,599</p>
+            </div>
+        </article>
+        <article>
+            <div class="image-container">
+                <div class="copy-container" style="padding-top: 15px;">
+                    <span class="top-left" style="color: white; padding: 3px; background-color: rgba(55, 200, 214, 0.7);">I AM THE NEW</span>
+                    <span class="top-right material-symbols-outlined">favorite</span>
+                </div>
+                <img src="img/download (3).jpeg" alt="Image">
+            </div>
+            
+            <div>
+                <div class="copy-container">
+                    <p class="copy">TRAINING SHOES</p>
+                    <span class="material-symbols-outlined">content_copy</span>
+                </div>                
+                <p>Reebok Women NFX Trainer</p>
+                <p style="font-weight: bold;">$7,599</p>
+            </div>
+        </article>
+        <article>
+            <div class="image-container">
+                <div class="copy-container" style="padding-top: 15px;">
+                    <span class="top-left" style="color: white; padding: 3px; background-color: rgba(55, 200, 214, 0.7);">I AM THE NEW</span>
+                    <span class="top-right material-symbols-outlined">favorite</span>
+                </div>
+                <img src="img/download (2).jpeg" alt="Image">
+            </div>
+            
+            <div>
+                <div class="copy-container">
+                    <p class="copy">TRAINING SHOES</p>
+                    <span class="material-symbols-outlined">content_copy</span>
+                </div>                
+                <p>Reebok Women NFX Trainer</p>
+                <p style="font-weight: bold;">$7,599</p>
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
